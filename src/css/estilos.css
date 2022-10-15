@@ -1,0 +1,143 @@
+body {
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*usado para que a imagem cubra todo o fundo*/ 
+    background-position: center;
+
+    font-family: 'VT323', monospace ;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*isso seria a altura da "janela" do nosso navegador, estou "forçando" uma altura para a tela do meu nabegador. Altura minima*/
+    padding: 30px;
+}
+
+.cartao {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden; /*tudo o que passar do cartao, vai ser escondido*/
+}
+
+.cartao .minhas-informacoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /*espaçamento entre os itens*/
+}
+
+.cartao .minhas-informacoes img{
+    border-radius: 70px;
+    border: 4px solid #02d08f;
+    width: 120px;
+}
+
+.cartao .minhas-informacoes .nome {
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 20px;
+    color: #b8bbc5;    
+}
+
+.cartao .conteudo {
+    margin-top: 15px;
+}
+
+.cartao .abas {
+    display: flex;
+}
+
+.cartao .abas .aba {
+    width: 50%; /*cada uma das abas ficou com 50%*/
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img {
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado { /*esta sessao deixa em destaque a aba que estiver selecionada, mudando de cor*/
+    background-color: #262626;
+}
+
+.cartao .informacoes-abas {
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover{ /*quando o mouse passa por cima a cor muda*/
+    background-color: #414141;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none; /*escondeu os conteudos das abas*/
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto; /*este serve para criar um scrow, independete do tamanho do texto, tera um scroll para encurtar, no eixo y*/
+    padding-right: 15px;
+}
+
+.informacoes-abas .descricao span{
+    color: #02d08f;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.redes-sociais li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3 ease-in-out;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo{
+    background-color: #06c185;
+}
+
+.redes-sociais .linkedin{
+    background-color: #1d87bd;
+}
+
+.redes-sociais .github{
+    background-color: #545454;
+}
+
+

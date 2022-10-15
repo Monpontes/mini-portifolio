@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none; /* este conteudo tira as bolinhas criadas em lista*/
+}
+
+a {
+    text-decoration: none; /*este conteudo retira a decoracao do link, no caso, a cor*/
+    color: #000;
+}
